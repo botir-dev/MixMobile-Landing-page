@@ -18,12 +18,12 @@ export default function App() {
       className={`${theme === true ? "bg-black" : "bg-white"} overflow-x-hidden`}
     >
       <header>
-        {/* <Header mode={theme} /> */}
+        <Header mode={theme} />
       </header>
       <main className="py-1">
         <section>
-          {/* <HeroSection mode={theme} /> */}
-          {/* <ThemeButton onClick={() => setTheme((prev) => !prev)} mode={theme} /> */}
+          <HeroSection mode={theme} />
+          <ThemeButton onClick={() => setTheme((prev) => !prev)} mode={theme} />
         </section>
         <section>
           <PartnerBrand mode={theme} />
