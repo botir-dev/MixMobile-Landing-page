@@ -67,9 +67,15 @@ export default function index({ mode }) {
 
         {/* burger menu */}
         <div className="flex flex-col gap-[6px] lg:hidden">
-          <span className="w-[30px] h-[2px] bg-black"></span>
-          <span className="w-[30px] h-[2px] bg-black"></span>
-          <span className="w-[30px] h-[2px] bg-black"></span>
+          <span
+            className={`w-[30px] h-[2px] ${mode == true ? "bg-white" : "bg-black"}`}
+          ></span>
+          <span
+            className={`w-[30px] h-[2px] ${mode == true ? "bg-white" : "bg-black"}`}
+          ></span>
+          <span
+            className={`w-[30px] h-[2px] ${mode == true ? "bg-white" : "bg-black"}`}
+          ></span>
         </div>
       </div>
     </div>

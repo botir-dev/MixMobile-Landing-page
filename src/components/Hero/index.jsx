@@ -4,18 +4,18 @@ import RightIcon from "../../Icons/RightIcon";
 
 export default function index({ mode }) {
   return (
-    <div className="flex items-center justify-between mt-[110px]">
+    <div className="flex items-center justify-between sm:mt-[110px] mt-[100px] container w-full max-w-[1200px] px-2 mx-auto ">
       {/* Hero content */}
-      <div className="w-[650px]">
+      <div className="w-full lg:max-w-[650px] lg:block flex flex-col items-center">
         {/* Title */}
         <h1
-          className={`text-[66px] font-bold leading-19 tracking-[0.1px] ${mode == true ? "text-white" : "text-black"}`}
+          className={`lg:text-[66px] md:text-[50px] md:leading-15 sm:text-[35px] sm:leading-11 text-[30px] leading-11 font-bold lg:text-left text-center tracking-[0.1px] ${mode == true ? "text-white" : "text-black"}`}
         >
           Eng so'ngi smartfonlar, <br />{" "}
           <span className="text-red-700">Eng yaxshi narxda.</span>
         </h1>
         {/* Description */}
-        <p className="text-[19px] leading-7 text-gray-500 pt-10 w-[500px]">
+        <p className="lg:text-[19px] md:text-[17px] sm:text-[16px] leading-7 text-gray-500 md:mt-10 mt-5 w-full lg:max-w-[500px] lg:text-left text-center">
           Eng yaxshi brendlarning eng yangi mobil telefonlarini kashf eting.
           Sifat kafolatlangan, kafolatlangan va a'lo darajadagi mijozlarga
           xizmat ko'rsatish.
@@ -40,7 +40,7 @@ export default function index({ mode }) {
         </div>
         {/* Statistics */}
         <div>
-          <ul className="flex items-center gap-30 pt-8">
+          <ul className="flex sm:items-center lg:gap-30 md:gap-20 gap-10 mt-8 lg:flex-row md:flex-row sm:flex-row flex-wrap sm:justify-start justify-center">
             <li>
               <p className="text-[23px] font-bold text-red-700">100+</p>
               <span className="text-gray-500 text-[15px] tracking-[0.5px]">
@@ -63,10 +63,10 @@ export default function index({ mode }) {
         </div>
       </div>
       {/* Hero images */}
-      <div>
+      <div className="lg:block hidden">
         <img
-          src={LightThemePhone}
-          className="w-70"
+          src={mode == true ? LightThemePhone : DarkThemePhone}
+          className={`${mode === true ? "w-70" : "w-72"}`}
           alt="Light mode Phone in Telegram"
         />
       </div>
