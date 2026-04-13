@@ -23,16 +23,18 @@ export default function index({ mode }) {
         {/* Buttons */}
         <div className="mt-8 flex items-center gap-5">
           <a
-            className="group flex items-center gap-1 text-white lg:text-[15px] md:text-[14px] text-[13px] bg-red-700 p-2 border-1 border-red-700 rounded-[8px] hover:opacity-90"
+            className="group flex items-center gap-1 text-white lg:text-[15px] md:text-[14px] text-[14px] bg-red-700 p-2 border-1 border-red-700 rounded-[8px] hover:opacity-90"
             href="#"
           >
             To'plamni ko'rish
             <span className="transition-transform duration-300 group-hover:translate-x-1.5">
-              <RightIcon color={"white"} />
+              <span className="md:block hidden">
+                <RightIcon color={"white"} />
+              </span>
             </span>
           </a>
           <a
-            className="text-red-700 ease-in-out transition-all duration-300 lg:text-[15px] md:text-[14px] text-[13px] p-2 rounded-[8px] border-1 border-red-700 hover:bg-red-700 hover:text-white"
+            className="text-red-700 ease-in-out transition-all duration-300 lg:text-[15px] md:text-[14px] text-[14px] p-2 rounded-[8px] border-1 border-red-700 hover:bg-red-700 hover:text-white"
             href="#"
           >
             E'lonlarni ko'rish
@@ -40,7 +42,7 @@ export default function index({ mode }) {
         </div>
         {/* Statistics */}
         <div>
-          <ul className="flex sm:items-center lg:gap-30 md:gap-20 gap-10 mt-8 lg:flex-row md:flex-row sm:flex-row flex-wrap sm:justify-start justify-center">
+          <ul className="flex sm:items-center lg:gap-30 md:gap-20 sm:gap-12 gap-6 mt-8 lg:flex-row md:flex-row sm:flex-row flex-wrap sm:justify-start justify-center">
             <li className="sm:text-left text-center">
               <p className="lg:text-[23px] md:text-[21px] sm:text-[19px] text-[17px] font-bold text-red-700">
                 100+
