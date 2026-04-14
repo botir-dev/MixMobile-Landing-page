@@ -32,7 +32,6 @@ export default function App() {
         <WhyChoose mode={theme} />
         <GetInTouch mode={theme} />
       </main>
-
       <footer>
         <Footer mode={theme} />
       </footer>
