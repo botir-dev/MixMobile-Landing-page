@@ -4,7 +4,7 @@ import RightIcon from "../../Icons/RightIcon";
 
 export default function index({ mode }) {
   return (
-    <div className="flex items-center justify-between sm:mt-[110px] mt-[100px] container w-full max-w-[1200px] px-2 mx-auto ">
+    <section className="flex items-center justify-between sm:mt-[110px] mt-[100px] container w-full max-w-[1200px] px-2 mx-auto">
       {/* Hero content */}
       <div className="w-full lg:max-w-[650px] lg:block flex flex-col items-center">
         {/* Title */}
@@ -23,18 +23,18 @@ export default function index({ mode }) {
         {/* Buttons */}
         <div className="mt-8 flex items-center gap-5">
           <a
-            className="group flex items-center gap-1 text-white lg:text-[15px] md:text-[14px] text-[14px] bg-red-700 p-2 border-1 border-red-700 rounded-[8px] hover:opacity-90"
+            className="group flex items-center gap-1 text-white lg:text-[15px] md:text-[14px] text-[13px] bg-red-700 p-2 border-1 border-red-700 rounded-[8px] hover:opacity-90"
             href="#"
           >
             To'plamni ko'rish
             <span className="transition-transform duration-300 group-hover:translate-x-1.5">
-              <span className="md:block hidden">
+              <span>
                 <RightIcon color={"white"} />
               </span>
             </span>
           </a>
           <a
-            className="text-red-700 ease-in-out transition-all duration-300 lg:text-[15px] md:text-[14px] text-[14px] p-2 rounded-[8px] border-1 border-red-700 hover:bg-red-700 hover:text-white"
+            className="text-red-700 ease-in-out transition-all duration-300 lg:text-[15px] md:text-[14px] text-[13px] p-2 rounded-[8px] border-1 border-red-700 hover:bg-red-700 hover:text-white"
             href="#"
           >
             E'lonlarni ko'rish
@@ -78,6 +78,6 @@ export default function index({ mode }) {
           alt="Light mode Phone in Telegram"
         />
       </div>
-    </div>
+    </section>
   );
 }

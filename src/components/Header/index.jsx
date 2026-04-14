@@ -2,12 +2,17 @@ import Logo from "/mix-mobile-logo.png";
 import ShoppingIcon from "../../Icons/CartIcon";
 
 export default function index({ mode }) {
+  const scrollTo = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <div
       className={
         mode == true
-          ? "shadow-[0_0_10px_rgba(255,255,255,0.5)] py-4 fixed w-full bg-black"
-          : "shadow-md py-4 fixed w-full bg-white"
+          ? "shadow-[0_0_10px_rgba(255,255,255,0.5)] py-4 fixed z-999 w-full backdrop-blur-sm bg-white/5"
+          : "shadow-md py-4 fixed w-full backdrop-blur-sm fixed z-999 bg-white/1"
       }
     >
       <div className="flex items-center justify-between container w-full max-w-[1200px]  mx-auto px-2">
@@ -28,7 +33,7 @@ export default function index({ mode }) {
                 className={`text-[15px] hover:text-red-700 ${mode == true ? "text-white" : "text-black"}`}
                 href="#"
               >
-                Mahsulotlar
+                Brendlar
               </a>
             </li>
             <li>
@@ -39,7 +44,11 @@ export default function index({ mode }) {
                 E'lonlar
               </a>
             </li>
-            <li>
+            <li
+              onClick={() => {
+                scrollTo("about");
+              }}
+            >
               <a
                 className={`text-[15px] hover:text-red-700 ${mode == true ? "text-white" : "text-black"}`}
                 href="#"

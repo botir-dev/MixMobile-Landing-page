@@ -26,7 +26,7 @@ export default function index({ mode }) {
     "vivo-logo",
   ];
   return (
-    <div className="mt-12">
+    <section className="mt-12">
       {/* Content */}
       <div className="flex flex-col items-center container w-full max-w-[1200px] px-2 mx-auto ">
         <h2
@@ -42,7 +42,7 @@ export default function index({ mode }) {
       {/* Brands images */}
       <div>
         <ul
-          className={`flex items-center bg-gray-800 w-max marquee mt-[30px] lg:gap-8 md:gap-6 sm:gap-5 gap-4`}
+          className={`flex items-center bg-[#y1B1F2A] w-max marquee mt-[30px] lg:gap-8 md:gap-6 sm:gap-5 gap-4`}
         >
           {images.map((image, index) => {
             return (
@@ -57,6 +57,6 @@ export default function index({ mode }) {
           })}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }

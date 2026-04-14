@@ -1,0 +1,23 @@
+
+export default function PhoneIcon({ color }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+    >
+      <title>Smartphone SVG Icon</title>
+      <g
+        fill="none"
+        stroke={color}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      >
+        <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+        <path d="M12 18h.01" />
+      </g>
+    </svg>
+  );
+}
