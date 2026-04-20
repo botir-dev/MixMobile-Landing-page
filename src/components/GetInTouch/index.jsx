@@ -149,7 +149,7 @@ export default function index({ mode }) {
                 <li>
                   <a
                     target="_blank"
-                    href="#"
+                    href="https://www.google.com/maps/place/%D0%9A%D1%83%D1%80%D0%B3%D0%B0%D0%BD%D1%82%D0%B5%D0%BF%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D1%80%D0%B0%D0%B9%D0%BE%D0%BD,+%D0%90%D0%BD%D0%B4%D0%B8%D0%B6%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@40.7903817,72.3004,10.5z/data=!4m6!3m5!1s0x38bd04d79c190267:0x1c454448e0de0851!8m2!3d40.7695615!4d72.8751786!16s%2Fm%2F080j95b?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
                     className="flex gap-4 items-start duration-100  p-2 rounded-lg w-fit"
                   >
                     <span className="bg-red-700 block p-3 rounded-[12px]">
